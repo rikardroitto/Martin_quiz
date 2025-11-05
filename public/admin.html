@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Doktor Landgren Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="admin-view">
+    <div class="admin-container">
+        <header class="admin-header">
+            <h1>Quiz Admin Panel</h1>
+            <div class="admin-stats">
+                <div class="stat-box">
+                    <label>Anslutna spelare:</label>
+                    <span id="player-count">0</span>
+                </div>
+                <div class="stat-box">
+                    <label>Poäng:</label>
+                    <span id="admin-score">0</span> / <span id="admin-total">9</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="admin-content">
+            <!-- QR Code Section -->
+            <div class="admin-section">
+                <h2>Spelarnas URL (QR-kod)</h2>
+                <div id="qr-code" class="qr-code"></div>
+                <div id="player-url" class="player-url"></div>
+            </div>
+
+            <!-- Quiz Controls -->
+            <div class="admin-section">
+                <h2>Quiz-kontroller</h2>
+                <div id="quiz-status" class="quiz-status">
+                    <p id="status-text">Väntar på att starta quiz...</p>
+                </div>
+                <div class="button-group">
+                    <button id="start-quiz-btn" class="btn btn-primary">Starta Quiz</button>
+                    <button id="next-question-btn" class="btn btn-secondary" disabled>Nästa Fråga</button>
+                    <button id="end-question-btn" class="btn btn-warning" disabled>Avsluta Fråga</button>
+                </div>
+            </div>
+
+            <!-- Current Question -->
+            <div class="admin-section" id="current-question-section" style="display: none;">
+                <h2>Aktuell Fråga</h2>
+                <div class="question-info">
+                    <h3 id="admin-question-text"></h3>
+                    <div id="admin-alternatives" class="admin-alternatives"></div>
+                    <div class="answer-info">
+                        <p><strong>Rätt svar:</strong> <span id="correct-answer-display"></span></p>
+                        <p><strong>Svar mottagna:</strong> <span id="answers-received">0</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Results -->
+            <div class="admin-section" id="results-section" style="display: none;">
+                <h2>Resultat</h2>
+                <div id="admin-results" class="admin-results"></div>
+                <div class="explanation-box">
+                    <h3>Förklaring:</h3>
+                    <p id="explanation-text"></p>
+                </div>
+            </div>
+
+            <!-- Players List -->
+            <div class="admin-section">
+                <h2>Anslutna Spelare</h2>
+                <div id="players-list" class="players-list">
+                    <p class="empty-message">Inga spelare anslutna än</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="admin.js"></script>
+</body>
+</html>

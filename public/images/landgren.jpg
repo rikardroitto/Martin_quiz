@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 900">
+  <!-- 3x3 grid of colored blocks as placeholder -->
+  <rect x="0" y="0" width="300" height="300" fill="#FF6B6B"/>
+  <rect x="300" y="0" width="300" height="300" fill="#4ECDC4"/>
+  <rect x="600" y="0" width="300" height="300" fill="#45B7D1"/>
+
+  <rect x="0" y="300" width="300" height="300" fill="#FFA07A"/>
+  <rect x="300" y="300" width="300" height="300" fill="#98D8C8"/>
+  <rect x="600" y="300" width="300" height="300" fill="#F7DC6F"/>
+
+  <rect x="0" y="600" width="300" height="300" fill="#BB8FCE"/>
+  <rect x="300" y="600" width="300" height="300" fill="#85C1E2"/>
+  <rect x="600" y="600" width="300" height="300" fill="#F8B739"/>
+
+  <!-- Text overlay -->
+  <text x="450" y="420" font-family="Arial, sans-serif" font-size="48" font-weight="bold" text-anchor="middle" fill="white" stroke="#333" stroke-width="2">
+    DOKTOR
+  </text>
+  <text x="450" y="480" font-family="Arial, sans-serif" font-size="48" font-weight="bold" text-anchor="middle" fill="white" stroke="#333" stroke-width="2">
+    LANDGREN
+  </text>
+  <text x="450" y="540" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="white" stroke="#333" stroke-width="1">
+    (Ersätt denna bild med landgren.jpg)
+  </text>
+</svg>

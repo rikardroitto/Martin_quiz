@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doktor Landgren Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="player-view">
+    <div class="container">
+        <!-- Welcome Screen -->
+        <div id="welcome-screen" class="screen active">
+            <h1>Doktor Landgren Quiz</h1>
+            <p>Väntar på att quizet ska starta...</p>
+            <div class="loader"></div>
+        </div>
+
+        <!-- Game Screen -->
+        <div id="game-screen" class="screen">
+            <!-- Image Grid (3x3) -->
+            <div id="image-container" class="image-grid">
+                <div class="image-tile" data-tile="0"></div>
+                <div class="image-tile" data-tile="1"></div>
+                <div class="image-tile" data-tile="2"></div>
+                <div class="image-tile" data-tile="3"></div>
+                <div class="image-tile" data-tile="4"></div>
+                <div class="image-tile" data-tile="5"></div>
+                <div class="image-tile" data-tile="6"></div>
+                <div class="image-tile" data-tile="7"></div>
+                <div class="image-tile" data-tile="8"></div>
+            </div>
+
+            <!-- Score Display -->
+            <div id="score-display" class="score-display">
+                Poäng: <span id="current-score">0</span> / <span id="total-points">9</span>
+            </div>
+
+            <!-- Statistics Display (hidden initially) -->
+            <div id="stats-display" class="stats-display hidden">
+                <h3>Resultat</h3>
+                <div id="stats-bars"></div>
+                <div id="score-change" class="score-change"></div>
+            </div>
+
+            <!-- Question Display -->
+            <div id="question-container" class="question-container hidden">
+                <div class="question-header">
+                    <span id="question-number">Fråga 1/10</span>
+                    <span id="timer" class="timer">15s</span>
+                </div>
+                <h2 id="question-text"></h2>
+                <div id="alternatives" class="alternatives"></div>
+            </div>
+        </div>
+
+        <!-- Victory Screen -->
+        <div id="victory-screen" class="screen">
+            <div class="victory-image-container">
+                <img id="victory-image" src="images/landgren.jpg" alt="Doktor Landgren">
+            </div>
+            <h1 class="victory-text">Skål för Doktor Landgren!</h1>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="player.js"></script>
+</body>
+</html>
