@@ -1,0 +1,151 @@
+{
+  "title": "Quiz om Doktor Landgrens Avhandling",
+  "author": "Martin Landgren",
+  "totalPoints": 9,
+  "questions": [
+    {
+      "id": 1,
+      "question": "Vilket ämnesområde behandlar avhandlingen?",
+      "alternatives": [
+        "Biologi och ekologi",
+        "Fysik och astronomi",
+        "Datavetenskap och AI",
+        "Medicin och hälsa"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Detta är ett exempelsvar. Ersätt med riktig information om avhandlingen."
+    },
+    {
+      "id": 2,
+      "question": "Hur många studier ingick i avhandlingen?",
+      "alternatives": [
+        "2 studier",
+        "3 studier",
+        "4 studier",
+        "5 studier"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Detta är ett exempelsvar. Ersätt med riktig information om avhandlingen."
+    },
+    {
+      "id": 3,
+      "question": "Vilken metod användes huvudsakligen?",
+      "alternatives": [
+        "Kvalitativ intervjustudie",
+        "Kvantitativ surveyundersökning",
+        "Experimentell laboratoriestudie",
+        "Litteraturstudie och metaanalys"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Detta är ett exempelsvar. Ersätt med riktig information om avhandlingen."
+    },
+    {
+      "id": 4,
+      "question": "Vilket år påbörjades forskningsprojektet?",
+      "alternatives": [
+        "2018",
+        "2019",
+        "2020",
+        "2021"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Detta är ett exempelsvar. Ersätt med riktig information om avhandlingen."
+    },
+    {
+      "id": 5,
+      "question": "Vad är avhandlingens viktigaste bidrag?",
+      "alternatives": [
+        "En ny teoretisk modell",
+        "Upptäckt av ny art",
+        "Utveckling av ny mätmetod",
+        "Policy-rekommendationer"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Detta är ett exempelsvar. Ersätt med riktig information om avhandlingen."
+    },
+    {
+      "id": 6,
+      "question": "Hur många sidor är avhandlingen?",
+      "alternatives": [
+        "Ca 150 sidor",
+        "Ca 200 sidor",
+        "Ca 250 sidor",
+        "Ca 300 sidor"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Detta är ett exempelsvar. Ersätt med riktig information om avhandlingen."
+    },
+    {
+      "id": 7,
+      "question": "Vid vilket universitet disputerades avhandlingen?",
+      "alternatives": [
+        "Uppsala universitet",
+        "Lunds universitet",
+        "Stockholms universitet",
+        "Göteborgs universitet"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Detta är ett exempelsvar. Ersätt med riktig information om avhandlingen."
+    },
+    {
+      "id": 8,
+      "question": "Vilken är avhandlingens praktiska tillämpning?",
+      "alternatives": [
+        "Förbättrad diagnostik",
+        "Miljöskydd och hållbarhet",
+        "Utbildningsmetoder",
+        "Företagsledning"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Detta är ett exempelsvar. Ersätt med riktig information om avhandlingen."
+    },
+    {
+      "id": 9,
+      "question": "Vem var huvudhandledare?",
+      "alternatives": [
+        "Professor Anna Andersson",
+        "Professor Bengt Bengtsson",
+        "Professor Carl Carlsson",
+        "Professor Diana Danielsson"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Detta är ett exempelsvar. Ersätt med riktig information om avhandlingen."
+    },
+    {
+      "id": 10,
+      "question": "Vilken slutsats drar avhandlingen?",
+      "alternatives": [
+        "Mer forskning behövs",
+        "Hypotesen bekräftades helt",
+        "Hypotesen förkastades",
+        "Resultat var blandade men lovande"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Detta är ett exempelsvar. Ersätt med riktig information om avhandlingen."
+    },
+    {
+      "id": 11,
+      "question": "Hur lång tid tog det att slutföra avhandlingen?",
+      "alternatives": [
+        "3 år",
+        "4 år",
+        "5 år",
+        "6 år"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Detta är ett exempelsvar. Ersätt med riktig information om avhandlingen."
+    },
+    {
+      "id": 12,
+      "question": "Vilket språk är avhandlingen skriven på?",
+      "alternatives": [
+        "Svenska",
+        "Engelska",
+        "Både svenska och engelska",
+        "Ett annat språk"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Detta är ett exempelsvar. Ersätt med riktig information om avhandlingen."
+    }
+  ]
+}

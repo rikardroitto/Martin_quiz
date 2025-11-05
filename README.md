@@ -88,13 +88,66 @@ Martin_quiz/
 - **Realtid**: Socket.io för WebSocket-kommunikation
 - **QR-kod**: QRCode.js för generering
 
-## Deployment
+## Deployment till Render (Rekommenderat för fester!)
+
+Render är perfekt för detta quiz eftersom:
+- ✅ **Gratis tier** med WebSocket-stöd
+- ✅ **HTTPS automatiskt** (fungerar på alla mobiler)
+- ✅ **Ingen kreditkort krävs**
+- ✅ **Enkel deployment från GitHub**
+
+### Steg-för-steg Render Deployment
+
+1. **Skapa konto på Render**
+   - Gå till [render.com](https://render.com)
+   - Registrera dig (gratis)
+
+2. **Pusha din kod till GitHub**
+   ```bash
+   git push origin main
+   ```
+
+3. **Skapa ny Web Service på Render**
+   - Klicka "New +" → "Web Service"
+   - Anslut ditt GitHub-repo
+   - Välj repot `Martin_quiz`
+   - Render upptäcker automatiskt `render.yaml` ✨
+
+4. **Konfigurera (om render.yaml inte används)**
+   - Name: `doktor-landgren-quiz`
+   - Environment: `Node`
+   - Build Command: `npm install`
+   - Start Command: `npm start`
+   - Instance Type: `Free`
+
+5. **Deploy!**
+   - Klicka "Create Web Service"
+   - Vänta 2-3 minuter medan appen deployar
+   - Du får en URL typ: `https://doktor-landgren-quiz.onrender.com`
+
+6. **Innan festen**
+   - Öppna `https://din-url.onrender.com/admin.html`
+   - Scanna QR-koden med din mobil för att testa
+   - Spelare går till `https://din-url.onrender.com`
+
+### ⚠️ Viktigt om Render Free Tier
+
+- Appen **spinner ner efter 15 min inaktivitet**
+- Första accessen efter nedspinning tar **30-50 sekunder**
+- **Lösning**: Öppna admin-sidan 5 minuter innan festen börjar så är den varm!
+
+### Alternativa Gratis Hosts (om Render inte fungerar)
+
+- **Railway.app**: Liknande som Render, 500 timmar/månad gratis
+- **Fly.io**: Bra WebSocket-stöd, gratis tier
+- **Glitch**: Snabb setup men kan vara långsam vid många användare
+
+## Deployment lokalt (om du har WiFi tillgängligt)
 
 För att köra på en server synlig på lokalt nätverk:
 
 ```bash
-# I server.js, ändra PORT om önskat
-PORT=3000 npm start
+npm start
 ```
 
 Hitta din lokala IP-adress:
@@ -108,12 +161,16 @@ ipconfig
 
 Spelarnas URL blir då: `http://[DIN-IP]:3000`
 
-## Nästa steg
+**OBS**: Lokalt nätverk kräver att alla är anslutna till samma WiFi!
 
-1. Skapa din `quizfragor.json` enligt `QUIZFRAGOR_FORMAT.md`
-2. Ersätt placeholder-bilden med en riktig bild på Martin Landgren
-3. Testa appen lokalt
-4. Deploya till en server eller kör på lokalt nätverk för festen!
+## Innan festen - Checklista
+
+1. ✅ Redigera `quizfragor.json` med riktiga frågor om avhandlingen
+2. ✅ Ersätt `public/images/landgren.jpg` med riktig bild
+3. ✅ Testa appen lokalt: `npm start`
+4. ✅ Deploya till Render
+5. ✅ Testa från din mobil att allt fungerar
+6. ✅ 5 min innan festen: öppna admin-sidan så servern är varm!
 
 ## Licens
 
