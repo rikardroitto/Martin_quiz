@@ -1,151 +1,147 @@
 {
-  "title": "Quiz om Doktor Landgrens Avhandling",
+  "title": "Quiz on Dr Landgren's Dissertation",
   "author": "Martin Landgren",
   "totalPoints": 9,
   "questions": [
     {
       "id": 1,
-      "question": "Vilket ämnesområde behandlar avhandlingen?",
-      "alternatives": [
-        "Biologi och ekologi",
-        "Fysik och astronomi",
-        "Datavetenskap och AI",
-        "Medicin och hälsa"
-      ],
+      "question": "What is the main theoretical lens of the dissertation?",
+      "alternatives": ["SIT", "Game theory", "Psychoanalysis", "Econometrics"],
       "correctAnswer": 0,
-      "explanation": "Detta är ett exempelsvar. Ersätt med riktig information om avhandlingen."
+      "explanation": "The work applies Social Identity Theory to early Christian leadership and identity."
     },
     {
       "id": 2,
-      "question": "Hur många studier ingick i avhandlingen?",
-      "alternatives": [
-        "2 studier",
-        "3 studier",
-        "4 studier",
-        "5 studier"
-      ],
-      "correctAnswer": 2,
-      "explanation": "Detta är ett exempelsvar. Ersätt med riktig information om avhandlingen."
+      "question": "Dedication lists five family members. First name?",
+      "alternatives": ["Maria", "Anna", "Lena", "Eva"],
+      "correctAnswer": 0,
+      "explanation": "Dedication: 'For Maria, Benjamin, Josef, Ester, and Miriam'."
     },
     {
       "id": 3,
-      "question": "Vilken metod användes huvudsakligen?",
-      "alternatives": [
-        "Kvalitativ intervjustudie",
-        "Kvantitativ surveyundersökning",
-        "Experimentell laboratoriestudie",
-        "Litteraturstudie och metaanalys"
-      ],
-      "correctAnswer": 1,
-      "explanation": "Detta är ett exempelsvar. Ersätt med riktig information om avhandlingen."
+      "question": "Which Greek term is central throughout the study?",
+      "alternatives": ["ἐπίσκοπος", "διάκονος", "ἀπόστολος", "προφήτης"],
+      "correctAnswer": 0,
+      "explanation": "The term ἐπίσκοπος (overseer/bishop) and its cognates are analysed across 60–180 CE."
     },
     {
       "id": 4,
-      "question": "Vilket år påbörjades forskningsprojektet?",
-      "alternatives": [
-        "2018",
-        "2019",
-        "2020",
-        "2021"
-      ],
-      "correctAnswer": 1,
-      "explanation": "Detta är ett exempelsvar. Ersätt med riktig information om avhandlingen."
+      "question": "Which detail from the Preface is true?",
+      "alternatives": ["Friday runs", "Marathon PR", "Triathlon medal", "Ski championship"],
+      "correctAnswer": 0,
+      "explanation": "Rikard's Friday morning runs helped the author improve his Swedish‑mile speed."
     },
     {
       "id": 5,
-      "question": "Vad är avhandlingens viktigaste bidrag?",
-      "alternatives": [
-        "En ny teoretisk modell",
-        "Upptäckt av ny art",
-        "Utveckling av ny mätmetod",
-        "Policy-rekommendationer"
-      ],
-      "correctAnswer": 0,
-      "explanation": "Detta är ett exempelsvar. Ersätt med riktig information om avhandlingen."
+      "question": "Time span of sources studied?",
+      "alternatives": ["30–70 CE", "60–180 CE", "200–400 CE", "500–700 CE"],
+      "correctAnswer": 1,
+      "explanation": "The analysis covers roughly 60–180 CE."
     },
     {
       "id": 6,
-      "question": "Hur många sidor är avhandlingen?",
-      "alternatives": [
-        "Ca 150 sidor",
-        "Ca 200 sidor",
-        "Ca 250 sidor",
-        "Ca 300 sidor"
-      ],
-      "correctAnswer": 2,
-      "explanation": "Detta är ett exempelsvar. Ersätt med riktig information om avhandlingen."
+      "question": "Typeface used in the book?",
+      "alternatives": ["EB Garamond", "Times", "Baskerville", "Palatino"],
+      "correctAnswer": 0,
+      "explanation": "Typeset in EB Garamond; design by Carl Johan Berglund."
     },
     {
       "id": 7,
-      "question": "Vid vilket universitet disputerades avhandlingen?",
-      "alternatives": [
-        "Uppsala universitet",
-        "Lunds universitet",
-        "Stockholms universitet",
-        "Göteborgs universitet"
-      ],
+      "question": "Which leadership facet is NOT one of the four highlighted from SIT?",
+      "alternatives": ["Charisma decay", "Prototypicality", "Entrepreneurship", "Impresarioship"],
       "correctAnswer": 0,
-      "explanation": "Detta är ett exempelsvar. Ersätt med riktig information om avhandlingen."
+      "explanation": "The study highlights prototypicality, identity entrepreneurship, impresarioship, and identity advancement."
     },
     {
       "id": 8,
-      "question": "Vilken är avhandlingens praktiska tillämpning?",
-      "alternatives": [
-        "Förbättrad diagnostik",
-        "Miljöskydd och hållbarhet",
-        "Utbildningsmetoder",
-        "Företagsledning"
-      ],
-      "correctAnswer": 1,
-      "explanation": "Detta är ett exempelsvar. Ersätt med riktig information om avhandlingen."
+      "question": "Which set is analysed (debated for date/authenticity)?",
+      "alternatives": ["Ignatian letters", "Pliny's letters", "Seneca's letters", "Cicero's letters"],
+      "correctAnswer": 0,
+      "explanation": "The so‑called Ignatian letters receive extended analysis and dating discussion."
     },
     {
       "id": 9,
-      "question": "Vem var huvudhandledare?",
-      "alternatives": [
-        "Professor Anna Andersson",
-        "Professor Bengt Bengtsson",
-        "Professor Carl Carlsson",
-        "Professor Diana Danielsson"
-      ],
+      "question": "Which non‑canonical text is a key source?",
+      "alternatives": ["Didache", "Homer", "Tacitus", "Plutarch"],
       "correctAnswer": 0,
-      "explanation": "Detta är ett exempelsvar. Ersätt med riktig information om avhandlingen."
+      "explanation": "Didache is examined closely for local leadership and group identity."
     },
     {
       "id": 10,
-      "question": "Vilken slutsats drar avhandlingen?",
-      "alternatives": [
-        "Mer forskning behövs",
-        "Hypotesen bekräftades helt",
-        "Hypotesen förkastades",
-        "Resultat var blandade men lovande"
-      ],
-      "correctAnswer": 3,
-      "explanation": "Detta är ett exempelsvar. Ersätt med riktig information om avhandlingen."
+      "question": "Effect of the emerging episcopate on the synagogue relationship?",
+      "alternatives": ["Widened gap", "Narrowed gap", "No change", "Healed rift"],
+      "correctAnswer": 0,
+      "explanation": "The study argues the office tended to widen the gap between Christ groups and synagogues."
     },
     {
       "id": 11,
-      "question": "Hur lång tid tog det att slutföra avhandlingen?",
-      "alternatives": [
-        "3 år",
-        "4 år",
-        "5 år",
-        "6 år"
-      ],
-      "correctAnswer": 2,
-      "explanation": "Detta är ett exempelsvar. Ersätt med riktig information om avhandlingen."
+      "question": "Which NT corpus gives detailed overseer traits?",
+      "alternatives": ["Pastorals", "Revelation", "Hebrews", "James"],
+      "correctAnswer": 0,
+      "explanation": "1 Timothy 3 and Titus 1 list qualities for the ἐπίσκοπος."
     },
     {
       "id": 12,
-      "question": "Vilket språk är avhandlingen skriven på?",
-      "alternatives": [
-        "Svenska",
-        "Engelska",
-        "Både svenska och engelska",
-        "Ett annat språk"
-      ],
-      "correctAnswer": 1,
-      "explanation": "Detta är ett exempelsvar. Ersätt med riktig information om avhandlingen."
+      "question": "'Impresarioship' in SIT mainly means…",
+      "alternatives": ["Embedding identity", "Raising funds", "Hiring staff", "Traveling"],
+      "correctAnswer": 0,
+      "explanation": "Identity impresarioship embeds identity in practices, roles, and institutions."
+    },
+    {
+      "id": 13,
+      "question": "Which trait is excluded from the ingroup prototype (except in Didache)?",
+      "alternatives": ["Halakah keeping", "Hospitality", "Faithfulness", "Teaching"],
+      "correctAnswer": 0,
+      "explanation": "The prototype excludes halakah adherence as a group marker (with Didache as a partial exception)."
+    },
+    {
+      "id": 14,
+      "question": "Ignatius portrays the bishop as representing…",
+      "alternatives": ["Heavenly realm", "City council", "Roman army", "Guilds"],
+      "correctAnswer": 0,
+      "explanation": "In Ignatius, the bishop can be seen as an earthly representation of the heavenly realm."
+    },
+    {
+      "id": 15,
+      "question": "Which pair is often treated as near‑synonyms in the debate?",
+      "alternatives": ["ἐπίσκοπος & πρεσβύτερος", "διάκονος & χήρα", "ἀπόστολος & προφήτης", "διδάσκαλος & ἰατρός"],
+      "correctAnswer": 0,
+      "explanation": "A recurring question is whether ἐπίσκοπος and πρεσβύτερος function synonymously in some texts."
+    },
+    {
+      "id": 16,
+      "question": "Key Greco‑Roman comparison for early congregations?",
+      "alternatives": ["Voluntary associations", "Senate", "Legions", "Theatres"],
+      "correctAnswer": 0,
+      "explanation": "Congregations are compared to voluntary associations to illuminate structures and titles."
+    },
+    {
+      "id": 17,
+      "question": "Public defense date and time?",
+      "alternatives": ["6 Nov 13:00", "5 Nov 10:00", "7 Nov 15:00", "1 Nov 09:00"],
+      "correctAnswer": 0,
+      "explanation": "The examination is scheduled for 6 November 2025 at 13:00 in Bromma."
+    },
+    {
+      "id": 18,
+      "question": "Faculty opponent at the defense?",
+      "alternatives": ["Paul Foster", "N. T. Wright", "Paula Fredriksen", "Larry Hurtado"],
+      "correctAnswer": 0,
+      "explanation": "Professor Paul Foster (Edinburgh) is listed as faculty examiner."
+    },
+    {
+      "id": 19,
+      "question": "Main title subtitle begins: 'A Social Identity Perspective on the…'",
+      "alternatives": ["Emergence", "Decline", "Politics", "Rituals"],
+      "correctAnswer": 0,
+      "explanation": "Full subtitle: '…Emergence of Christian Identity'."
+    },
+    {
+      "id": 20,
+      "question": "Series number (DTH)?",
+      "alternatives": ["No. 11", "No. 7", "No. 21", "No. 3"],
+      "correctAnswer": 0,
+      "explanation": "Published as Dissertationes Theologicae Holmienses No. 11."
     }
   ]
 }
