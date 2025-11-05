@@ -177,13 +177,20 @@ function updateScore() {
 }
 
 // Update image reveal (3x3 grid)
+// Reveal order: corners first, then edges, center last
+// Grid layout: 0 1 2
+//              3 4 5
+//              6 7 8
 function updateImageReveal(score) {
+    // Order: corners -> edges -> center (middle tile revealed last)
+    const revealOrder = [0, 2, 6, 8, 1, 3, 5, 7, 4];
     const tiles = document.querySelectorAll('.image-tile');
-    tiles.forEach((tile, index) => {
-        if (index < score) {
-            tile.classList.add('revealed');
-        }
-    });
+
+    // Reveal tiles based on score
+    for (let i = 0; i < score; i++) {
+        const tileIndex = revealOrder[i];
+        tiles[tileIndex].classList.add('revealed');
+    }
 }
 
 // Show victory screen
