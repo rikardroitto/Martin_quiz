@@ -23,8 +23,35 @@ let gameState = {
   questionStartTime: null,
   isQuestionActive: false,
   gameStarted: false,
-  gameWon: false
+  gameWon: false,
+  shuffledCorrectAnswer: -1, // The correct answer index after shuffling
+  shuffledAlternatives: [] // The shuffled alternatives
 };
+
+// Shuffle array utility function
+function shuffleArray(array) {
+  const shuffled = [...array];
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  return shuffled;
+}
+
+// Shuffle alternatives and track correct answer position
+function shuffleAlternatives(alternatives, correctAnswerIndex) {
+  // Create array of indices
+  const indices = alternatives.map((_, i) => i);
+  const shuffledIndices = shuffleArray(indices);
+
+  // Create shuffled alternatives
+  const shuffledAlternatives = shuffledIndices.map(i => alternatives[i]);
+
+  // Find new position of correct answer
+  const newCorrectIndex = shuffledIndices.indexOf(correctAnswerIndex);
+
+  return { shuffledAlternatives, newCorrectIndex };
+}
 
 // Load quiz data
 function loadQuizData() {
@@ -71,7 +98,7 @@ io.on('connection', (socket) => {
       players: gameState.players.map(p => ({ id: p.id, name: p.name }))
     });
 
-    // If question is active, send it to the new player
+    // If question is active, send it to the new player with shuffled alternatives
     if (gameState.isQuestionActive && gameState.currentQuestionIndex >= 0) {
       const question = gameState.quizData.questions[gameState.currentQuestionIndex];
       const timeLeft = 15 - Math.floor((Date.now() - gameState.questionStartTime) / 1000);
@@ -81,7 +108,7 @@ io.on('connection', (socket) => {
           questionNumber: gameState.currentQuestionIndex + 1,
           totalQuestions: gameState.quizData.questions.length,
           question: question.question,
-          alternatives: question.alternatives,
+          alternatives: gameState.shuffledAlternatives, // Use shuffled alternatives
           timeLeft: timeLeft
         });
       }
@@ -154,14 +181,22 @@ io.on('connection', (socket) => {
     gameState.questionStartTime = Date.now();
     gameState.isQuestionActive = true;
 
+    // Shuffle alternatives and track correct answer
+    const { shuffledAlternatives, newCorrectIndex } = shuffleAlternatives(
+      question.alternatives,
+      question.correctAnswer
+    );
+    gameState.shuffledCorrectAnswer = newCorrectIndex;
+    gameState.shuffledAlternatives = shuffledAlternatives;
+
     console.log(`Starting question ${gameState.currentQuestionIndex + 1}`);
 
-    // Send question to all players
+    // Send question to all players with shuffled alternatives
     io.emit('new-question', {
       questionNumber: gameState.currentQuestionIndex + 1,
       totalQuestions: gameState.quizData.questions.length,
       question: question.question,
-      alternatives: question.alternatives,
+      alternatives: shuffledAlternatives,
       timeLeft: 15
     });
 
@@ -217,7 +252,7 @@ function endQuestion() {
 
   gameState.isQuestionActive = false;
   const question = gameState.quizData.questions[gameState.currentQuestionIndex];
-  const correctAnswer = question.correctAnswer;
+  const correctAnswer = gameState.shuffledCorrectAnswer; // Use shuffled correct answer
 
   // Calculate statistics
   const answerCounts = [0, 0, 0, 0];
@@ -247,7 +282,7 @@ function endQuestion() {
 
   console.log(`Question ended. Correct: ${correctCount}/${totalAnswers}, Score: ${oldScore} -> ${gameState.score}`);
 
-  // Send results to all clients
+  // Send results to all clients with shuffled correct answer
   io.emit('question-results', {
     correctAnswer: correctAnswer,
     answerCounts: answerCounts,
